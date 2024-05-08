@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='utf-8'?>
+    <plugin id="cordova-OS-privacy-manifest" version="1.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+        <name>cordova-OS-privacy-manifest</name>
+        <platform name="ios">
+            <config-file parent="/*" target="config.xml">
+                <privacy-manifest>
+                    <dict>
+                        <key>NSPrivacyTracking</key>
+                        <false />
+                        <key>NSPrivacyTrackingDomains</key>
+                        <array />
+                        <key>NSPrivacyCollectedDataTypes</key>
+                        <array />
+                        <key>NSPrivacyAccessedAPITypes</key>
+                        <array>
+                            <dict>
+                                <key>NSPrivacyAccessedAPIType</key>
+                                <string>NSPrivacyAccessedAPICategoryFileTimestamp</string>
+                                <key>NSPrivacyAccessedAPITypeReasons</key>
+                                <array>
+                                        <string>C617.1</string>
+                                </array>
+                            </dict>
+                            <dict>
+                                <key>NSPrivacyAccessedAPIType</key>
+                                <string>NSPrivacyAccessedAPICategorySystemBootTime</string>
+                                <key>NSPrivacyAccessedAPITypeReasons</key>
+                                <array>
+                                        <string>35F9.1</string>
+                                </array>
+                            </dict>
+                            <dict>
+                                <key>NSPrivacyAccessedAPIType</key>
+                                <string>NSPrivacyAccessedAPICategoryDiskSpace</string>
+                                <key>NSPrivacyAccessedAPITypeReasons</key>
+                                <array>
+                                        <string>E174.1</string>
+                                </array>
+                            </dict>
+                            <dict>
+                                <key>NSPrivacyAccessedAPIType</key>
+                                <string>NSPrivacyAccessedAPICategoryUserDefaults</string>
+                                <key>NSPrivacyAccessedAPITypeReasons</key>
+                                <array>
+                                        <string>CA92.1</string>
+                                </array>
+                            </dict>
+                        </array>
+                    </dict>
+                </privacy-manifest>
+            </config-file>
+        </platform>
+    </plugin>
