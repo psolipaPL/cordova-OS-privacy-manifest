@@ -4,7 +4,7 @@
         <platform name="ios">
             <config-file parent="/*" target="config.xml">
                 <privacy-manifest>
-                    <!-- <dict>
+                    <dict>
                         <key>NSPrivacyTracking</key>
                         <false />
                         <key>NSPrivacyTrackingDomains</key>
@@ -46,7 +46,7 @@
                                 </array>
                             </dict>
                         </array>
-                    </dict> -->
+                    </dict>
                 </privacy-manifest>
             </config-file>
         </platform>
